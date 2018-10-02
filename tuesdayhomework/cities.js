@@ -5,5 +5,5 @@ var a = {
 };
 
 for (var b in a) {
-    console.log(b + ": " + a[b]);
+    console.log(a[b] + ": " + b);
 }
