@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    height: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+}
+
+#menu {
+    float: right;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 50px;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+
+#background {
+    width: 100%;
+    opacity: 0.7;
+}
+
+#welcome {
+    color: white;
+    font-family: Georgia;
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+#button {
+    width: 400px;
+    height: 70px;
+    background-color: #ffcc33;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid #cc6600;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#buttontext {
+    color: #cc6600;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#downsection {
+    padding-top: 50px;
+    background-color: #cccccc;
+    width: 100%;
+    height: 100%;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+.box {
+    width: 600px;
+    height: 150px;
+    display: inline-block;
+}
+
+.boxtext {
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+#box1 {
+    clear: left;
+}
+
+#box2 {
+    clear: right;
+}
+
+#box3 {
+    clear: left;
+}
+
+#box4 {
+    clear: right;
+}
+
+#cat {
+    height: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+#swim {
+    height: 30%;
+    float: left;
+    margin-right: 20px;
+}
+
+#world {
+    height: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+#columns {
+    height: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 1%;
+}
+
+footer>p {
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 50px;
+    }
+
+    #welcome {
+        font-size: 28px
+    }
+
+    #button {
+        width: 200px;
+        height: 30px;
+        top: 65%;
+        border: 0;
+    }
+
+    #buttontext {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 25px;
+        font-size: 15px;
+    }
+
+    footer>p {
+        line-height: 20px;
+    }
+
+    .box {
+        width: 400px;
+    }
+
+    .boxtext {
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+
+    #downsection {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+    }
+
+    #logo {
+        margin-left: 5px;
+    }
+
+    #menu {
+        margin-right: 25px;
+        height: 75%;
+    }
+}
