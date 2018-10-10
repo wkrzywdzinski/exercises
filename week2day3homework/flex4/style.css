@@ -1,0 +1,48 @@
+.box {
+    width: 300px;
+    height: 300px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.smallbox {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+#box1 {
+    background-color: gray;
+    justify-content: flex-end;
+}
+
+#box2 {
+    background-color: black;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#box3 {
+    background-color: blue;
+    align-items: flex-end;
+}
+
+#box4 {
+    background-color: #810082;
+}
+
+#smallbox1 {
+    background-color: orange;
+}
+
+#smallbox2 {
+    background-color: yellow;
+}
+
+#smallbox3 {
+    background-color: green;
+}
+
+#smallbox4 {
+    background-color: pink;
+}
