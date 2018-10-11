@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menuclick {
+    left: 75%;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+#sprintlogo {
+    float: left;
+    height: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+}
+
+#burger {
+    float: right;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 50px;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+
+#background {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#welcome {
+    color: white;
+    font-family: Georgia;
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+#button {
+    width: 400px;
+    height: 70px;
+    background-color: #ffcc33;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid #cc6600;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#buttontext {
+    color: #cc6600;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#downsection {
+    padding-top: 50px;
+    background-color: #cccccc;
+    width: 100%;
+    height: 100%;
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+
+.row {}
+
+.box {
+    width: 45%;
+    height: 150px;
+    display: inline-block;
+}
+
+.boxtext {
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+#box1 {
+    clear: left;
+}
+
+#box2 {
+    clear: right;
+}
+
+#box3 {
+    clear: left;
+}
+
+#box4 {
+    clear: right;
+}
+
+.logo {
+    height: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+#swim {
+    height: 30%;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 3%;
+}
+
+footer>p {
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.afterclick.sidemenu {
+    left: 0px;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 5000px;
+    width: 100vw;
+    height: 100%;
+}
+
+#dark {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+#menu {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 75%;
+    padding-top: 70px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+#logout {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    padding-left: 60px;
+}
+
+.link {
+    font-size: 50px;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#xxx {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+/* MEDIA QUERY FOR A SMARTPHONE */
+@media screen and (max-width: 480px) {
+    #menu {
+        padding-top: 80px;
+        width: 50%;
+        left: 50%;
+    }
+
+    .link {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    #logout {
+        font-size: 25px;
+        padding-left: 33px;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #welcome {
+        font-size: 28px;
+    }
+
+    #button {
+        width: 200px;
+        height: 30px;
+        top: 65%;
+        border: 0;
+    }
+
+    #buttontext {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 25px;
+        font-size: 15px;
+    }
+
+    footer>p {
+        line-height: 20px;
+    }
+
+    .box {
+        width: 400px;
+    }
+
+    .boxtext {
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+
+    #downsection {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    #logo {
+        margin-left: 5px;
+    }
+
+    #burger {
+        margin-right: 25px;
+        height: 75%;
+    }
+}
