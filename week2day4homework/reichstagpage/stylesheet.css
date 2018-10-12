@@ -147,13 +147,14 @@ footer>p {
 }
 
 .afterclick.sidemenu {
-    left: 0px;
+    transition: 2s;
+    left: 0%;
 }
 
 .sidemenu {
     position: fixed;
     top: 0px;
-    left: 5000px;
+    left: 100%;
     width: 100vw;
     height: 100%;
 }
