@@ -1,0 +1,37 @@
+* {
+    margin: 0
+}
+
+#outbox {
+    width: 1000px;
+}
+
+#leftbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 1000px;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: 2;
+}
+
+#right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000px;
+    height: 1000px;
+}
+
+.border {
+    position: absolute;
+    width: 10px;
+    height: 1000px;
+    background-color: gray;
+    top: 0;
+    left: 495px;
+    z-index: 5;
+    cursor: col-resize;
+}
