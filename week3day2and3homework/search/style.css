@@ -1,0 +1,9 @@
+input {
+    background-color: pink;
+}
+
+.highlight {
+    background-color: gray;
+    color: blue;
+    text-decoration: underline;
+}
