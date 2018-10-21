@@ -60,21 +60,6 @@ h1 {
     cursor: pointer;
 }
 
-#introbox {
-    line-height: 200px;
-    vertical-align: middle;
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    border: 5px solid black;
-    border-style: dashed;
-    width: 600px;
-    height: 600px;
-    background-color: #232426;
-    cursor: pointer;
-    opacity: 1;
-}
-
 #rules {
     font-family: symtext;
     color: white;
