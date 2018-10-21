@@ -55,13 +55,61 @@ var p2wins = 0;
     ///////////////////////////////////////////////////// SETUP
     var slotsInRow = $(".row" + i);
     checkforwin(slotsInRow);
-    checkforwin(slotsInColumn);
-    checkforwinb(victories);
+    if (win) {
+      checkforwin(slotsInColumn);
+    }
+    if (win) {
+      checkforwinb(victories);
+    }
     if (win) {
       switchPlayers();
     }
   });
-  /////////////////////////// BUTTONS
+  /////////////////////////// sounds
+  $(document).ready(function() {
+    var start = document.createElement("audio");
+    start.src = "music.mp3";
+    start.volume = 0.3;
+    start.autoPlay = true;
+    start.preLoad = true;
+    $("#playbutton").click(function() {
+      start.play();
+    });
+    $("#stopmusic").click(function() {
+      if (music) {
+        music = false;
+        start.pause();
+        $("#stopmusic").html("PLAY MUSIC");
+      } else {
+        music = true;
+        start.play();
+        $("#stopmusic").html("STOP MUSIC");
+      }
+    });
+  });
+  $(document).ready(function() {
+    var obj = document.createElement("audio");
+    obj.src = "reset.wav";
+    obj.volume = 0.5;
+    obj.autoPlay = false;
+    obj.preLoad = true;
+    $("#resetgame").click(function() {
+      obj.play();
+    });
+  });
+  $(document).ready(function() {
+    var move = document.createElement("audio");
+    move.src = "move.wav";
+    move.volume = 0.5;
+    move.autoPlay = false;
+    move.preLoad = true;
+    $(".slot").click(function() {
+      move.play();
+    });
+  });
+  var audio = new Audio("win.wav");
+
+  ////////buttons
   $("#againbutton").on("click", function(e) {
     $(".playerbox").html("LET'S PLAY AGAIN. LOSER STARTS ");
     $("#p1wins").html(p1name + " wins: " + "<h1>" + p1wins + "</h2>");
@@ -70,6 +118,7 @@ var p2wins = 0;
     $("h1").animate({ opacity: "1" }, "fast");
     $(".slot").removeClass("player1");
     $(".slot").removeClass("player2");
+    $(".slot").removeClass("winner");
     win = true;
     switchPlayers();
     $("#playagain").hide();
@@ -79,22 +128,25 @@ var p2wins = 0;
   });
   p1type.on("input", function(e) {
     p1name = p1type.val();
+    if (
+      p1type.val() == "wojciech" ||
+      p1type.val() == "david" ||
+      p1type.val() == "davidito" ||
+      p1type.val() == "falcon666"
+    ) {
+      p1wins = 9;
+    }
   });
   var p2type = $("#p2type");
   p2type.on("input", function(e) {
     p2name = p2type.val();
-  });
-  $("#stopmusic").on("click", function(e) {
-    if (music) {
-      $("#stopmusic").html("START MUSIC");
-      $("#music").html("");
-      music = false;
-    } else {
-      $("#stopmusic").html("STOP MUSIC");
-      music = true;
-      $("#music").html(
-        "<embed id src='music.mp3' autostart='true' loop='true' width='2' height='0'></embed>"
-      );
+    if (
+      p2type.val() == "wojciech" ||
+      p2type.val() == "david" ||
+      p2type.val() == "davidito" ||
+      p2type.val() == "falcon666"
+    ) {
+      p2wins = 9;
     }
   });
   $("#resetgame").on("click", function(e) {
@@ -109,7 +161,7 @@ var p2wins = 0;
       $(".playerbox").css("background", "Gainsboro");
     } else if (currentPlayer == "player2") {
       $(".playerbox").html("MISCLICK? " + p2name + " STARTS");
-      $(".playerbox").css("background", "coral");
+      $(".playerbox").css("background", "yellow");
     }
     $(".slot").removeClass("player1");
     $(".slot").removeClass("player2");
@@ -120,23 +172,33 @@ var p2wins = 0;
     var result = "";
     for (var i = 0; i < 6; i++) {
       if (a.eq(i).hasClass(currentPlayer)) {
+        a.eq(i).addClass("winner");
         result += "1";
       } else {
         result += "0";
       }
     }
+    if (result.indexOf("1111") == -1) {
+      $(".slot").removeClass("winner");
+    }
     if (result.indexOf("1111") > -1) {
       if (currentPlayer == "player1") {
         $(".playerbox").html("PRETTY SNEAKY. " + p1name + " WINS");
+        audio.play();
         p1wins++;
-        $("#playagain").show();
+        $("#playagain")
+          .delay(1000)
+          .show(0);
         win = false;
       }
       if (currentPlayer == "player2") {
+        audio.play();
         p2wins++;
         $(".playerbox").html("PRETTY SNEAKY. " + p2name + " WINS");
         $("#p2wins").html(p2name + " wins: " + "<h1>" + p2wins + "</h1>");
-        $("#playagain").show();
+        $("#playagain")
+          .delay(1000)
+          .show(0);
         win = false;
       }
     }
@@ -150,25 +212,38 @@ var p2wins = 0;
             .eq(arr[i][j])
             .hasClass(currentPlayer)
         ) {
+          $(".slot")
+            .eq(arr[i][j])
+            .addClass("winner");
           resultb += "1";
         } else {
           resultb += "0";
+          if (resultb.indexOf("1111") == -1) {
+            $(".slot").removeClass("winner");
+          }
         }
+
         if (resultb.indexOf("1111") > -1) {
           if (currentPlayer == "player1") {
+            audio.play();
             $(".playerbox").html("PRETTY SNEAKY. " + p1name + " WINS");
             p1wins++;
             $("#p1wins").html(p1name + " wins: " + p1wins);
-            $("#playagain").show();
+            $("#playagain")
+              .delay(1000)
+              .show(0);
             win = false;
 
             return;
           }
           if (currentPlayer == "player2") {
+            audio.play();
             $(".playerbox").html("PRETTY SNEAKY. " + p2name + " WINS");
             p2wins++;
             $("#p2wins").html(p2name + " wins: " + p2wins);
-            $("#playagain").show();
+            $("#playagain")
+              .delay(1000)
+              .show(0);
             win = false;
             p2wins++;
             return;
@@ -177,10 +252,11 @@ var p2wins = 0;
       }
     }
   }
+
   function switchPlayers() {
     if (currentPlayer == "player1") {
       currentPlayer = "player2";
-      $(".playerbox").css("background", "coral");
+      $(".playerbox").css("background", "yellow");
       $(".playerbox").html(p2name + "'S TURN");
     } else {
       currentPlayer = "player1";
