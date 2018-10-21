@@ -115,7 +115,7 @@ var p2wins = 0;
     $("#p1wins").html(p1name + " wins: " + "<h1>" + p1wins + "</h2>");
     $("#p2wins").html(p2name + " wins: " + "<h1>" + p2wins + "</h2>");
     $("h1").css("opacity", 0);
-    $("h1").animate({ opacity: "1" }, "fast");
+    $("h1").animate({ opacity: "1" }, "slow");
     $(".slot").removeClass("player1");
     $(".slot").removeClass("player2");
     $(".slot").removeClass("winner");
@@ -195,7 +195,6 @@ var p2wins = 0;
         audio.play();
         p2wins++;
         $(".playerbox").html("PRETTY SNEAKY. " + p2name + " WINS");
-        $("#p2wins").html(p2name + " wins: " + "<h1>" + p2wins + "</h1>");
         $("#playagain")
           .delay(1000)
           .show(0);
