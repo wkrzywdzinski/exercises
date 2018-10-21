@@ -12,6 +12,12 @@ body {
     background-image: url(background.png);
 }
 
+h1 {
+    margin-top: -30px;
+    font-size: 250px;
+    color: red;
+}
+
 #start {
     display: block;
     z-index: 500;
@@ -40,6 +46,42 @@ body {
     height: 200px;
     background-color: yellow;
     cursor: pointer;
+}
+
+#rules {
+    font-family: symtext;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    top: 555px;
+    position: absolute;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#madeby {
+    font-family: symtext;
+    color: gray;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    top: 800px;
+    position: absolute;
+}
+
+#madebymain {
+    font-family: symtext;
+    color: black;
+    font-size: 5px;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    position: absolute;
 }
 
 #playagain {
@@ -88,7 +130,7 @@ body {
 #p2type {
     width: 300px;
     height: 50px;
-    background: Chocolate;
+    background: coral;
     position: absolute;
     right: 30px;
     top: 200px;
@@ -115,7 +157,7 @@ body {
 #p2wins {
     width: 300px;
     height: 50px;
-    background: Chocolate;
+    background: coral;
     position: absolute;
     right: 30px;
     top: 400px;
@@ -123,7 +165,37 @@ body {
     font-size: 30px;
     text-align: center;
     color: gray;
+    ;
+}
+
+#stopmusic {
+    width: 150px;
+    height: 25px;
+    background: black;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    font-family: symtext;
+    font-size: 15px;
+    text-align: center;
+    color: white;
     border: 0px;
+    cursor: pointer;
+}
+
+#resetgame {
+    width: 150px;
+    height: 25px;
+    background: red;
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+    font-family: symtext;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    border: 0px;
+    cursor: pointer;
 }
 
 .playerbox {
@@ -138,7 +210,7 @@ body {
     font-family: symtext;
     opacity: 0.9;
     border: 5px solid black;
-    border-style: dotted
+    border-style: dotted;
 }
 
 .slot {
@@ -173,5 +245,5 @@ body {
 
 .player2 .hole {
     transition: 1s;
-    background-color: Chocolate;
+    background-color: coral;
 }

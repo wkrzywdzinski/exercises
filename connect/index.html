@@ -11,6 +11,8 @@
 <body>
     <div id="start">
         <div id="playbutton">PLAY CONNECT4</div>
+        <div id="rules"><a href="https://en.wikipedia.org/wiki/Connect_Four" target="_blank">don't know the rules?</a></div>
+        <div id="madeby">GAME BY WOJCIECH // 2018</div>
     </div>
     <div id="playagain">
         <div id="againbutton">PLAY AGAIN</div>
@@ -18,10 +20,11 @@
     <div class="playerbox">LET'S START</div>
     <input type="text" id="p1type" name="search" placeholder="PLAYER 1 NAME">
     <input type="text" id="p2type" name="search" placeholder="PLAYER 2 NAME">
-    <div id="p1wins">NO WINS</div>
-    <div id="p2wins">NO WINS</div>
-    <embed src="music.mp3" autostart="true" loop="true" width="2" height="0">
-    </embed>
+    <div id="p1wins">FIRST ROUND</div>
+    <div id="p2wins">FIRST ROUND</div>
+    <div id="stopmusic">STOP MUSIC</div>
+    <div id="resetgame">RESET</div>
+    <div id="music"><embed id src='music.mp3' autostart='true' loop='true' width='2' height='0'></embed></div>
     <div id="box">
         <div class="column">
             <div class="slot row0">
@@ -164,6 +167,7 @@
             </div>
         </div>
     </div>
+    <div id="madebymain">GAME BY WOJCIECH // 2018</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="script.js"></script>
