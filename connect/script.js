@@ -218,6 +218,9 @@ var p2wins = 0;
         } else {
           resultb += "0";
           if (resultb.indexOf("1111") == -1) {
+            if (resultb.length >= 4) {
+              resultb = "";
+            }
             $(".slot").removeClass("winner");
           }
         }
