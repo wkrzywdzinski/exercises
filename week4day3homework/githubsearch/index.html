@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>github</title>
+</head>
+
+<body>
+    <h1>GITHUB API</h1>
+    <form>
+        <input type="text" placeholder="username" name="username" autocomplete="off">
+        <input type="password" placeholder="password" name="password" autocomplete="off">
+        <input type="text" placeholder="user to search" name="search" autocomplete="off">
+        <button name="button">submit</button>
+
+    </form>
+    <div id="repolist"> </div>
+    <!-- /////////////////////handlebars//////////// -->
+    <script id="repotemplate" type="text/x-handlebars-template">
+        {{#each data}}
+            <div class="repobox">
+                <img src="{{owner.avatar_url}}">
+                <div class="name">{{full_name}}</div>
+            </div>
+            {{/each}}
+    </script>
+    <!-- ////////////////////second template////////////// -->
+    <script id="submittemplate" type="text/x-handlebars-template">
+        <div class="submitbox">
+                        {{#each data}}
+                <p>{{commit.message}}</p>
+                {{/each}}
+            </div>
+    </script>
+    <!-- //////////////////links/////////// -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
