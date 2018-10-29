@@ -1,0 +1,14 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "homework 29.10.18 part 2",
+  "main": "colors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wojciech",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
+}
