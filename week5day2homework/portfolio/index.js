@@ -1,3 +1,4 @@
+const folder = "./projects/";
 const http = require("http");
 const fs = require("fs");
 const path = require("path"); //// >>> parse //
@@ -7,6 +8,28 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
   /////// normalize /////
+  if (req.url == "/") {
+    var body = "";
+    res.setHeader("Content-Type", "text/html");
+    res.statusCode = 200;
+    fs.readdir(folder, (err, files) => {
+      if (err) {
+        console.log("error");
+      }
+      files.forEach(file => {
+        body += "<li><a href=" + file + ">" + file + "</a></li>";
+      });
+      res.end(`
+          <!doctype html>
+  <html>
+  <title>PORTOFOLIO</title>
+  <ul>
+  ${body}
+  </ul>
+  </html>`);
+    });
+    return;
+  }
   const item = __dirname + "/projects" + req.url;
   const normalize = path.normalize(item);
   console.log(normalize);
