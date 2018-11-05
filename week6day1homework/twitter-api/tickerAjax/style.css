@@ -1,0 +1,20 @@
+body {
+  overflow: hidden;
+  width: 100%;
+}
+#headlines {
+    top: 0px;
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    background-color: black;
+    height: 50px;
+
+}
+
+#headlines a {
+    padding-right: 50px;
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+}
