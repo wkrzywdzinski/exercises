@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  overflow: hidden;
+}
+#view {
+  position: absolute;
+  height: 50vh;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+#view2 {
+  position: absolute;
+  height: 50vh;
+  top: 50%;
+  left: -100%;
+  transform: translateY(-50%);
+}
