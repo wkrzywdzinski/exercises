@@ -5,6 +5,7 @@
   var newKitty = 1;
   var timer;
   var transit = false;
+
   function moveKitties() {
     transit = true;
     kitties[curKitty].classList.remove("kittyboxin");

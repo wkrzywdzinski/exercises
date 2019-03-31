@@ -1,9 +1,10 @@
-(function() {
+(function () {
     var elem = document.getElementById("headlines");
     var links = elem.getElementsByTagName("A");
     var animId;
 
     var left = elem.offsetLeft;
+
     function moveHeadlines() {
         left--;
 
@@ -21,12 +22,12 @@
         animId = requestAnimationFrame(moveHeadlines);
     }
     for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener("mouseover", function(e) {
+        links[i].addEventListener("mouseover", function (e) {
             cancelAnimationFrame(animId);
             event.target.style.color = "blue";
             event.target.style.textDecoration = "underline";
         });
-        links[i].addEventListener("mouseleave", function(e) {
+        links[i].addEventListener("mouseleave", function (e) {
             event.target.style.color = "white";
             event.target.style.textDecoration = "none";
             moveHeadlines();

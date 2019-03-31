@@ -1,15 +1,21 @@
+<!-- html uses app.vue via main.js -->
+<!-- component with capital letter import, pass to app and pass to compontents -->
 <template>
   <div id="app">
-    <Todos />
+    <Header />
+    <!-- v-bind is passing the data -->
+    <Todos v-bind:todos="todos" v-on:deleteItem="deleteTodo" />
   </div>
 </template>
 
 <script>
+import Header from "./layout/Header";
 import Todos from "./components/Todos";
 export default {
   name: "app",
   components: {
-    Todos
+    Todos,
+    Header
   },
   data() {
     return {
@@ -31,10 +37,16 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    deleteTodo(id) {
+      //imporant! returns array without the one with id
+      this.todos = this.todos.filter(todo => todo.id !== id);
+    }
   }
 };
 </script>
-
+<!-- global styling -->
 <style>
 * {
   box-sizing: border-box;
