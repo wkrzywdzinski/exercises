@@ -15,10 +15,7 @@ export default class Postform extends Component {
   }
   onSubmit(e) {
     e.preventDefault();
-    const post = {
-      title: this.state.title,
-      body: this.state.body
-    };
+    console.log("submit");
   }
   render() {
     return (
@@ -28,12 +25,21 @@ export default class Postform extends Component {
           <div>
             <label>TITLE:</label>
             <br />
-            <input type="text" name="title" onChange={this.onChange} value={this.state.title} />
+            <input
+              type="text"
+              name="title"
+              onChange={this.onChange}
+              value={this.state.title}
+            />
           </div>
           <div>
             <label>Body:</label>
             <br />
-            <textarea name="body" onChange={this.onChange} value={this.state.body} />
+            <textarea
+              name="body"
+              onChange={this.onChange}
+              value={this.state.body}
+            />
           </div>
           <br />
           <button type="submit">submit</button>
