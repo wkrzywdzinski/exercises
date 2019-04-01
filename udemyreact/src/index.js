@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function getText() {
-  return "submitto";
-}
+const buttonText = "";
 const App = () => {
   return (
     <div>
@@ -11,7 +9,7 @@ const App = () => {
         <label for="name">name</label>
         <input id="name" />
         <button style={{ backgroundColor: "blue", color: "white" }}>
-          {getText()}
+          {buttonText}
         </button>
       </div>
     </div>
