@@ -14,17 +14,17 @@ class App extends React.Component {
       err => this.setState({ errorMessage: err.message })
     );
   }
-  // componentDidUpdate() {
-  //   console.log("update");
-  // }
-  render() {
+  renderContent() {
     if (this.state.errorMessage && !this.state.lat) {
       return <div> ERROR: {this.state.errorMessage}</div>;
     } else if (!this.state.errorMessage && this.state.lat) {
       return <SeasonDisplay lat={this.state.lat} />;
     } else {
-      return <Loader />;
+      return <Loader message="please accept location request" />;
     }
+  }
+  render() {
+    return <div>{this.renderContent()}</div>;
   }
 }
 export default App;
