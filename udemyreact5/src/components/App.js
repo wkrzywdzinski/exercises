@@ -11,6 +11,9 @@ class App extends React.Component {
     this.getVideos = this.getVideos.bind(this);
     this.getSelected = this.getSelected.bind(this);
   }
+  componentDidMount() {
+    this.getVideos("ecedemy");
+  }
   getVideos(term) {
     axios
       .get("https://www.googleapis.com/youtube/v3/search", {
@@ -22,7 +25,10 @@ class App extends React.Component {
         }
       })
       .then(resp => {
-        this.setState({ videos: resp.data.items });
+        this.setState({
+          videos: resp.data.items,
+          selected: resp.data.items[0]
+        });
       });
   }
   getSelected(video) {
@@ -32,8 +38,19 @@ class App extends React.Component {
     return (
       <div className="ui container">
         <Searchbar getVideos={this.getVideos} />
-        <VideoSelected video={this.state.selected} />
-        <VideoList videos={this.state.videos} getSelected={this.getSelected} />
+        <div className="ui grid">
+          <div className="ui row">
+            <div className="eleven wide column">
+              <VideoSelected video={this.state.selected} />
+            </div>
+            <div className="five wide column">
+              <VideoList
+                videos={this.state.videos}
+                getSelected={this.getSelected}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

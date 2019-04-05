@@ -6,6 +6,7 @@ class VideoItem extends Component {
     const video = this.props.video;
     return (
       <div
+        key={video.id.videoId}
         className="video-item item"
         onClick={() => {
           this.props.getSelected(video);
@@ -14,7 +15,7 @@ class VideoItem extends Component {
         <img
           className="ui image"
           src={video.snippet.thumbnails.medium.url}
-          alt=""
+          alt={video.snippet.title}
         />
         <div className="content">
           <div className="header">{video.snippet.title}</div>

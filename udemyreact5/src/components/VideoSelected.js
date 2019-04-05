@@ -6,8 +6,13 @@ class VideoSelected extends Component {
     if (!video.snippet) {
       return <div>loading</div>;
     } else {
+      const url = `https://www.youtube.com/embed/${video.id.videoId}`;
+      console.log(video);
       return (
         <div>
+          <div className="ui embed">
+            <iframe title="videoplayer" src={url} />
+          </div>
           <div className="ui segment">
             <h4 className="ui header">{video.snippet.title}</h4>
             <p>{video.snippet.description}</p>
