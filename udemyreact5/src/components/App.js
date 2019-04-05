@@ -2,12 +2,14 @@ import React from "react";
 import axios from "axios";
 import Searchbar from "./SearchBar";
 import VideoList from "./VideoList";
+import VideoSelected from "./VideoSelected";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { videos: [] };
+    this.state = { videos: [], selected: {} };
     this.getVideos = this.getVideos.bind(this);
+    this.getSelected = this.getSelected.bind(this);
   }
   getVideos(term) {
     axios
@@ -23,11 +25,15 @@ class App extends React.Component {
         this.setState({ videos: resp.data.items });
       });
   }
+  getSelected(video) {
+    this.setState({ selected: video });
+  }
   render() {
     return (
       <div className="ui container">
         <Searchbar getVideos={this.getVideos} />
-        <VideoList videos={this.state.videos} />
+        <VideoSelected video={this.state.selected} />
+        <VideoList videos={this.state.videos} getSelected={this.getSelected} />
       </div>
     );
   }
