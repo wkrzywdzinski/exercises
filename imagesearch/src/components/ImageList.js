@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./ImageList.css";
 
 class ImageList extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class ImageList extends Component {
         />
       );
     });
-    return <div>{images}</div>;
+    return <div className="imagelist">{images}</div>;
   }
 }
 
