@@ -1,0 +1,106 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/TypeScript-Node-Starter
+> git rev-parse --show-toplevel
+> git status -z -u
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/antigone
+> git rev-parse --show-toplevel
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/connectfour
+> git rev-parse --show-toplevel
+> git status -z -u
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/exercises
+> git rev-parse --show-toplevel
+> git status -z -u
+> git rev-parse master
+> git symbolic-ref --short HEAD
+> git symbolic-ref --short HEAD
+> git symbolic-ref --short HEAD
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/imageboard
+> git rev-parse --show-toplevel
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/petition
+> git rev-parse --show-toplevel
+> git status -z -u
+> git rev-parse master
+> git rev-parse master
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git symbolic-ref --short HEAD
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-parse --symbolic-full-name master@{u}
+> git config --get commit.template
+Open repository: /home/wojtek/Desktop/coding/socialnetwork
+> git status -z -u
+> git rev-parse master
+> git symbolic-ref --short HEAD
+> git rev-list --left-right master...refs/remotes/origin/master
+> git rev-list --left-right master...refs/remotes/origin/master
+> git rev-list --left-right master...refs/remotes/origin/master
+> git rev-parse master
+> git rev-list --left-right master...refs/remotes/origin/master
+> git rev-parse --symbolic-full-name master@{u}
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git rev-list --left-right master...refs/remotes/origin/master
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git check-ignore -z --stdin
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose

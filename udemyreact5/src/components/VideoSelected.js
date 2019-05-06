@@ -7,7 +7,6 @@ class VideoSelected extends Component {
       return <div>loading</div>;
     } else {
       const url = `https://www.youtube.com/embed/${video.id.videoId}`;
-      console.log(video);
       return (
         <div>
           <div className="ui embed">

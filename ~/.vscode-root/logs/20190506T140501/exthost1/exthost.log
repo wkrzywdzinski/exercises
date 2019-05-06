@@ -1,0 +1,44 @@
+[2019-05-06 14:05:04.017] [exthost] [info] extension host started
+[2019-05-06 14:05:04.048] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.048] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-05-06 14:05:04.051] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.051] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-05-06 14:05:04.066] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.066] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2019-05-06 14:05:04.144] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.144] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-05-06 14:05:04.147] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.147] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/coenraads.bracket-pair-colorizer-1.0.61/out/src/extension
+[2019-05-06 14:05:04.161] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.161] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/dbaeumer.vscode-eslint-1.8.2/client/out/extension
+[2019-05-06 14:05:04.188] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.188] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/esbenp.prettier-vscode-1.9.0/out/src/extension
+[2019-05-06 14:05:04.317] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.317] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2019-05-06 14:05:04.319] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.319] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/hookyqr.beautify-1.5.0/extension
+[2019-05-06 14:05:04.353] [exthost] [info] ExtensionService#_doActivateExtension teeLang.vsprettier {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:04.353] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/teelang.vsprettier-1.0.0/out/extension
+[2019-05-06 14:05:04.408] [exthost] [info] eager extensions activated
+[2019-05-06 14:05:23.757] [exthost] [info] extension host started
+[2019-05-06 14:05:23.771] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.771] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-05-06 14:05:23.776] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.776] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-05-06 14:05:23.791] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.791] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2019-05-06 14:05:23.894] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.894] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-05-06 14:05:23.900] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.900] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/coenraads.bracket-pair-colorizer-1.0.61/out/src/extension
+[2019-05-06 14:05:23.920] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.920] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/dbaeumer.vscode-eslint-1.8.2/client/out/extension
+[2019-05-06 14:05:23.954] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:23.954] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/esbenp.prettier-vscode-1.9.0/out/src/extension
+[2019-05-06 14:05:24.094] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:24.094] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2019-05-06 14:05:24.095] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:24.095] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/hookyqr.beautify-1.5.0/extension
+[2019-05-06 14:05:24.134] [exthost] [info] ExtensionService#_doActivateExtension teeLang.vsprettier {"startup":true,"activationEvent":"*"}
+[2019-05-06 14:05:24.134] [exthost] [info] ExtensionService#loadCommonJSModule /home/wojtek/.vscode/extensions/teelang.vsprettier-1.0.0/out/extension
+[2019-05-06 14:05:24.198] [exthost] [info] eager extensions activated
