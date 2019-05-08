@@ -1,0 +1,5 @@
+<button (click)="onClick('sea')">SEA</button> <button (click)="onClick('mountains')">MOUNTAINS</button>
+<div [ngSwitch]="selected">
+    <div *ngSwitchCase="'sea'">sea</div>
+    <div *ngSwitchCase="'mountains'">mountains</div>
+</div>

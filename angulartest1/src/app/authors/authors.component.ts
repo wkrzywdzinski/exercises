@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
         <ul>
             <li *ngFor="let item of authors">{{ item }}</li>
         </ul>
+        <p>{{ text | summary: 7 }}</p>
     `,
     styleUrls: ['./authors.component.css']
 })
@@ -14,7 +15,9 @@ export class AuthorsComponent {
     title = 'List of authors:';
 
     authors;
+    text;
     constructor(service: AuthorsService) {
         this.authors = service.getAuthors();
+        this.text = service.getText();
     }
 }
