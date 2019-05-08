@@ -15,9 +15,22 @@ import { TitlePipe } from './title.pipe';
 import { RepeatComponent } from './repeat/repeat.component';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
-    declarations: [AppComponent, CoursesComponent, AuthorsComponent, SummaryPipe, StarComponent, TextComponent, TitlePipe, RepeatComponent, ZippyComponent, ContactsComponent],
+    declarations: [
+        AppComponent,
+        CoursesComponent,
+        AuthorsComponent,
+        SummaryPipe,
+        StarComponent,
+        TextComponent,
+        TitlePipe,
+        RepeatComponent,
+        ZippyComponent,
+        ContactsComponent,
+        CourseComponent
+    ],
     imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [CoursesService, AuthorsService],
     bootstrap: [AppComponent]

@@ -1,0 +1,24 @@
+<form #form="ngForm">
+    <div class="form-group">
+        <label for="name">Course name:</label>
+        <input ngModel required minlength="5" type="text" name="name" #name="ngModel" (change)="log(type)" />
+    </div>
+    <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+        <div *ngIf="name.errors.required">Name of the course is required</div>
+        <div *ngIf="name.errors.minlength">
+            Minimum {{ name.errors.minlength.requiredLength }}, you have {{ name.errors.minlength.actualLength }}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="type">Type of course:</label>
+        <select required ngModel name="type" #type="ngModel">
+            <option *ngFor="let item of list" value="{{ item }}">{{ item }}</option>
+        </select>
+        <div class="alert alert-danger" *ngIf="!type.valid">Type of course is required</div>
+    </div>
+    <div class="checkbox">
+        <label for=""><input type="checkbox" ngModel name="subscribed" />30 days money back guarantee</label>
+    </div>
+    <p>{{ form.value | json }}</p>
+    <button class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+</form>
